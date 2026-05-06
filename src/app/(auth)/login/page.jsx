@@ -24,6 +24,13 @@ const LogInPage = () => {
          });
          console.log(res, error);
 
+          if(error){
+        alert(error.message)
+    }
+    if(res){
+        alert("SignIp Successful")
+    }
+
     // const handleLoginFunc = (e) => {
         // e.preventDefault();
         // const email = e.target.email.value;
